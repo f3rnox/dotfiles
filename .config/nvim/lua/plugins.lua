@@ -8,6 +8,27 @@ return {
   "NLKNguyen/papercolor-theme",
   "bluz71/vim-moonfly-colors",
   "yonlu/omni.vim",
+  "uncleTen276/dark_flat.nvim",
+  "nyoom-engineering/oxocarbon.nvim",
+  "yasukotelin/shirotelin",
+  "savq/melange-nvim",
+  "scottmckendry/cyberdream.nvim",
+  "yorik1984/newpaper.nvim",
+  "toupeira/vim-desertink",
+  "nanotech/jellybeans.vim",
+  {
+    "sainnhe/everforest",
+    config = function()
+      vim.g.everforest_enable_italic = true
+    end
+  },
+  {
+    'sainnhe/edge',
+    lazy = false,
+    config = function()
+      vim.g.edge_enable_italic = true
+    end
+  },
   {
     'ray-x/aurora',
     init = function()
@@ -220,4 +241,281 @@ return {
       )
     end,
   },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {}
+  },
+  {
+    "zaldih/themery.nvim",
+    lazy = false,
+    opts = {},
+    config = function()
+      require("themery").setup({
+        themes = {
+          {
+            name = "Gruvbox dark",
+            colorscheme = "gruvbox-baby",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Seoul256 dark",
+            colorscheme = "seoul256",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Seoul256 light",
+            colorscheme = "seoul256-light",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Github light",
+            colorscheme = "github",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Alduin",
+            colorscheme = "alduin",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "One dark",
+            colorscheme = "one",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "One light",
+            colorscheme = "one",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Kanagawa light",
+            colorscheme = "kanagawa",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Kanagawa dark",
+            colorscheme = "kanagawa",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "PaperColor dark",
+            colorscheme = "PaperColor",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "PaperColor light",
+            colorscheme = "PaperColor",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Moonfly",
+            colorscheme = "moonfly",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Omni",
+            colorscheme = "omni",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Edge dark",
+            colorscheme = "edge",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Edge light",
+            colorscheme = "edge",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Aurora",
+            colorscheme = "aurora",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Zephyr",
+            colorscheme = "zephyr",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Teide",
+            colorscheme = "teide",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Teide dark",
+            colorscheme = "teide-dark",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Teide darker",
+            colorscheme = "teide-darker",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Teide dimmed",
+            colorscheme = "teide-dimmed",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Teide light",
+            colorscheme = "teide-light",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Deep space",
+            colorscheme = "deep-space",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Dark flat",
+            colorscheme = "dark_flat",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Oxocarbon dark",
+            colorscheme = "oxocarbon",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Oxocarbon light",
+            colorscheme = "oxocarbon",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Shirotelin",
+            colorscheme = "shirotelin",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Melange light",
+            colorscheme = "melange",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Melange dark",
+            colorscheme = "melange",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Everforest dark",
+            colorscheme = "everforest",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Everforest light",
+            colorscheme = "everforest",
+            before = [[
+              vim.opt.background = "light"
+            ]],
+          },
+          {
+            name = "Cyberdream",
+            colorscheme = "cyberdream",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Desertink",
+            colorscheme = "desertink",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+          {
+            name = "Jellybeans",
+            colorscheme = "jellybeans",
+            before = [[
+              vim.opt.background = "dark"
+            ]],
+          },
+        }
+      })
+    end,
+  },
+  {
+    "cdmill/focus.nvim",
+    cmd = { "Focus", "Zen", "Narrow" },
+    opts = {},
+  },
+  {
+    "folke/zen-mode.nvim",
+    opts = {}
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
+  },
+  {
+    'andymass/vim-matchup',
+    opts = {
+      treesitter = {
+        stopline = 500,
+      },
+    },
+  },
+  "sbdchd/neoformat"
 }

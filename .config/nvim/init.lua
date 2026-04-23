@@ -1,3 +1,5 @@
+vim.g.loaded_matchit = 1
+
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
@@ -27,7 +29,11 @@ require("config.lazy")
 -- vim.cmd.colorscheme("zephyr")
 -- vim.cmd.colorscheme("moonfly")
 -- vim.cmd.colorscheme("omni")
-vim.cmd.colorscheme("aurora")
+-- vim.cmd.colorscheme("aurora")
+-- vim.cmd.colorscheme("shirotelin")
+-- vim.cmd.colorscheme("dark_flat")
+-- vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("jellybeans")
 
 vim.api.nvim_create_autocmd({ "InsertEnter" }, {
   callback = function()
