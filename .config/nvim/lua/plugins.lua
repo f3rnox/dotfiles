@@ -517,5 +517,9 @@ return {
       },
     },
   },
-  "sbdchd/neoformat"
+  "sbdchd/neoformat",
+  {
+    "felixcuello/neovim-cursor",
+    opts = {}
+  }
 }

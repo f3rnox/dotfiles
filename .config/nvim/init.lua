@@ -8,7 +8,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
-vim.opt.background = "dark"
+vim.opt.background = "light"
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
@@ -33,7 +33,8 @@ require("config.lazy")
 -- vim.cmd.colorscheme("shirotelin")
 -- vim.cmd.colorscheme("dark_flat")
 -- vim.cmd.colorscheme("everforest")
-vim.cmd.colorscheme("jellybeans")
+-- vim.cmd.colorscheme("jellybeans")
+vim.cmd.colorscheme("PaperColor")
 
 vim.api.nvim_create_autocmd({ "InsertEnter" }, {
   callback = function()
