@@ -1,5 +1,5 @@
 # shellcheck disable=SC1090
-#
+
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
@@ -42,7 +42,10 @@ alias ..='cd ..'
 alias ~='cd ~'
 alias c='clear'
 alias x='exit'
+alias ka='sudo killall'
+alias nvbrc='nvim ~/.bashrc'
 
+alias pn='pnpm'
 alias pni='pnpm install'
 alias pna='pnpm add'
 alias pnad='pnpm add -D'
@@ -53,6 +56,7 @@ alias pnl='pnpm lint'
 alias pnb='pnpm build'
 alias pnf='pnpm format'
 alias pnp='pnpm publish'
+alias pnuv='pnpm update-version'
 
 alias pkgi='sudo dnf install -y'
 alias pkgu='sudo dnf update -y'
@@ -62,6 +66,26 @@ alias gcam='git commit -am'
 alias ga='git add'
 alias gap='git add -p'
 alias gl='git log'
+alias gd='git diff'
+alias grsts='git restore --staged'
+alias grst='git restore'
+alias gcm='git commit -m'
+
+alias syson='sudo systemctl enable'
+alias sysoff='sudo systemctl disable'
+alias sysup='sudo systemctl start'
+alias sysdn='sudo systemctl stop'
+alias sysre='sudo systemctl restart'
+alias jctluf='sudo journalctl -f -u'
+alias jctl='sudo journalctl'
+
+alias m='make'
+alias mc='make clean'
+alias mr='make release'
+alias md='make debug'
+
+alias tmn='tmux new -s main'
+alias tma='tmux attach'
 
 function gp() {
     local current_branch
@@ -111,3 +135,5 @@ function git_current_branch_or_fail() {
 
     echo "$current_branch"
 }
+
+PATH=~/.console-ninja/.bin:$PATH
