@@ -136,4 +136,4 @@ function git_current_branch_or_fail() {
     echo "$current_branch"
 }
 
-PATH=~/.console-ninja/.bin:$PATH
+
